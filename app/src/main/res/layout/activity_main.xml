@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.miguel.simon_dice.MainActivity"
+    android:background="@color/negro">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="496dp"
+        android:orientation="horizontal"
+        tools:background="@color/negro"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="7dp"
+        tools:ignore="MissingConstraints">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bRojo"
+                android:layout_width="121dp"
+                android:layout_height="118dp"
+                android:layout_column="13"
+                android:layout_row="1"
+                android:text="Rojo"
+                android:background="@color/rojo"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/bSalir"
+                android:layout_width="109dp"
+                android:layout_height="50dp"
+                android:layout_column="16"
+                android:layout_row="0"
+                android:text="Exit"
+                android:background="@color/blanco"
+                android:onClick="salir"
+                />
+
+            <Button
+                android:id="@+id/bAzul"
+                android:layout_width="121dp"
+                android:layout_height="118dp"
+                android:layout_column="16"
+                android:layout_row="1"
+                android:text="Azul"
+                android:background="@color/azul" />
+
+            <Button
+                android:id="@+id/bStart"
+                android:layout_width="121dp"
+                android:layout_height="118dp"
+                android:layout_column="15"
+                android:layout_row="2"
+                android:text="Start"
+                android:background="@color/cyan"
+                android:onClick="startPart"/>
+
+            <Button
+                android:id="@+id/bAmarillo"
+                android:layout_width="121dp"
+                android:layout_height="118dp"
+                android:layout_column="13"
+                android:layout_row="3"
+                android:text="Amarillo"
+                android:background="@color/amarillo" />
+
+            <Button
+                android:id="@+id/bVerde"
+                android:layout_width="121dp"
+                android:layout_height="118dp"
+                android:layout_column="16"
+                android:layout_row="3"
+                android:text="Verde"
+                android:background="@color/verde" />
+
+            <Button
+                android:id="@+id/bReset"
+                android:layout_width="109dp"
+                android:layout_height="50dp"
+                android:layout_column="15"
+                android:layout_row="7"
+                android:text="Reset"
+                android:background="@color/blanco"
+                android:onClick="resetPart"/>
+
+        </GridLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
